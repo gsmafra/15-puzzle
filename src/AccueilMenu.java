@@ -18,15 +18,15 @@ public class AccueilMenu extends JFrame
         JPanel panel = (JPanel)getContentPane();
 
         AccueilButton newGame8 = new AccueilButton(0, 0, 0, 200, 64, this);
-        newGame8.setIcon(new ImageIcon("8puzzle.png"));
+        newGame8.setIcon(new ImageIcon("images/8puzzle.png"));
         panel.add(newGame8);
         
         AccueilButton newGame15 = new AccueilButton(1, 0, 65, 200, 64, this);
-        newGame15.setIcon(new ImageIcon("15puzzle.png"));
+        newGame15.setIcon(new ImageIcon("images/15puzzle.png"));
         panel.add(newGame15);
         
         AccueilButton options = new AccueilButton(5, 0, 130, 200, 64, this);
-        options.setIcon(new ImageIcon("options.png"));
+        options.setIcon(new ImageIcon("images/options.png"));
         panel.add(options);
 
         JLabel labelx = new JLabel();

@@ -60,15 +60,15 @@ public class Interface
 		}
 		
         PuzzleButton restart = new PuzzleButton(2, 78*nx + 25, 10, 76, 31, this);
-        restart.setIcon(new ImageIcon("restart.png"));
+        restart.setIcon(new ImageIcon("images/restart.png"));
         panel.add(restart);
 		
         PuzzleButton tip = new PuzzleButton(3, 78*nx + 25, 50, 76, 31, this);
-        tip.setIcon(new ImageIcon("tip.png"));
+        tip.setIcon(new ImageIcon("images/tip.png"));
         panel.add(tip);
 		
         PuzzleButton solve = new PuzzleButton(4, 78*nx + 25, 90, 76, 31, this);
-        solve.setIcon(new ImageIcon("solve.png"));
+        solve.setIcon(new ImageIcon("images/solve.png"));
         panel.add(solve);
 
         JLabel labelx = new JLabel();  
@@ -158,32 +158,32 @@ public class Interface
 	{
 		if (dessin == 0)
 		{
-			return "b (" + i + ").png";
+			return "images/b (" + i + ").png";
 		}
 		if (dessin == 1)
 		{
-			return "c (" + i + ").png";
+			return "images/c (" + i + ").png";
 		}
 		if (dessin == 2)
 		{
 			if(dim == 3)
 			{
-				return "s3 (" + i + ").png";
+				return "images/s3 (" + i + ").png";
 			}
 			else
 			{
-				return "s4 (" + i + ").png";
+				return "images/s4 (" + i + ").png";
 			}
 		}
 		else
 		{
 			if(dim == 3)
 			{
-				return "e1 (" + i + ").png";
+				return "images/e1 (" + i + ").png";
 			}
 			else
 			{
-				return "e2 (" + i + ").png";
+				return "images/e2 (" + i + ").png";
 			}
 		}
 	}

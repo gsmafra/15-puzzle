@@ -210,7 +210,7 @@ public class Solver
     {
         int i=1;
         /***************************************************/
-    	BufferedReader in = new BufferedReader(new FileReader("prox.txt"));
+    	BufferedReader in = new BufferedReader(new FileReader("./text/prox.txt"));
     	String line;
     	while((line = in.readLine()) != null)
     	{
@@ -219,7 +219,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("state.txt"));
+    	in = new BufferedReader(new FileReader("text/state.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.state[i++] = Integer.parseInt(line);
@@ -229,7 +229,7 @@ public class Solver
         /***************************************************/
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos1_up.txt"));
+    	in = new BufferedReader(new FileReader("text/pos1_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos1_up[i++] = Integer.parseInt(line);
@@ -237,7 +237,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos2_up.txt"));
+    	in = new BufferedReader(new FileReader("text/pos2_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos2_up[i++] = Integer.parseInt(line);
@@ -245,7 +245,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos3_up.txt"));
+    	in = new BufferedReader(new FileReader("text/pos3_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos3_up[i++] = Integer.parseInt(line);
@@ -253,7 +253,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos4_up.txt"));
+    	in = new BufferedReader(new FileReader("text/pos4_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos4_up[i++] = Integer.parseInt(line);
@@ -261,7 +261,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("posz_up.txt"));
+    	in = new BufferedReader(new FileReader("text/posz_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.posz_up[i++] = Integer.parseInt(line);
@@ -269,7 +269,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("prox_up.txt"));
+    	in = new BufferedReader(new FileReader("text/prox_up.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.prox_up[i++] = Integer.parseInt(line);
@@ -279,7 +279,7 @@ public class Solver
         /***************************************************/
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos5_left.txt"));
+    	in = new BufferedReader(new FileReader("text/pos5_left.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos5_left[i++] = Integer.parseInt(line);
@@ -287,7 +287,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos9_left.txt"));
+    	in = new BufferedReader(new FileReader("text/pos9_left.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos9_left[i++] = Integer.parseInt(line);
@@ -295,7 +295,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("pos13_left.txt"));
+    	in = new BufferedReader(new FileReader("text/pos13_left.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.pos13_left[i++] = Integer.parseInt(line);
@@ -303,7 +303,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("posz_left.txt"));
+    	in = new BufferedReader(new FileReader("text/posz_left.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.posz_left[i++] = Integer.parseInt(line);
@@ -311,7 +311,7 @@ public class Solver
     	in.close();
         /***************************************************/
     	i = 1;
-    	in = new BufferedReader(new FileReader("prox_left.txt"));
+    	in = new BufferedReader(new FileReader("text/prox_left.txt"));
     	while((line = in.readLine()) != null)
     	{
     		Solver.prox_left[i++] = Integer.parseInt(line);
