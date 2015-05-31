@@ -74,7 +74,7 @@ public class Interface
         JLabel labelx = new JLabel();  
         panel.add(labelx);
 
-        frame.setLocation(500, frame.getY());
+//        frame.setPosition(500, frame.getY());
 
         frame.setResizable(false);
         if (nx == 3)
