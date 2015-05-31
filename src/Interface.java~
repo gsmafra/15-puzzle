@@ -132,7 +132,7 @@ public class Interface
 
     public void showMessage(String msg)
     {
-        JOptionPane.showMessageDialog(null,msg);
+        JOptionPane.showMessageDialog(frame, msg);
     }
     
     public void moveTile(int mov, int x, int y)

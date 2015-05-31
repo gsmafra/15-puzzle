@@ -30,7 +30,7 @@ public class Interface
         
         this.dessin = app.getDessin();
 
-        frame = new JFrame("Taquin "+nx+"x"+ny);
+        frame = new JFrame("Taquin " + nx + "x" + ny);
 
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         WindowListener exitListener = new WindowAdapter()
