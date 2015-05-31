@@ -6,6 +6,24 @@ public class Jeu8 extends Jeu
         super(3, 3, app, id);
     }
 
+    public int getX(int i)
+    {
+        if (i > 0 & i < 10)
+        {
+            return (i-1)%3;
+        }
+        return 0;
+    }
+
+    public int getY(int i)
+    {
+        if (i > 0 & i < 10)
+        {
+            return (i-1)/3;
+        }
+        return 0;
+    }
+
     public int[] getState()
     {
         int[] state = new int[9];

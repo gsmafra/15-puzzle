@@ -83,7 +83,7 @@ public class Interface
             frame.setSize(434, 310);
         }
 
-        print = new Timer(400, new ActionListener()
+        print = new Timer(100, new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent arg0)

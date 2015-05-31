@@ -24,6 +24,38 @@ public class Jeu15 extends Jeu
             state[3*y + x] = i;
         }
         
+//        x = tiles[6].getPosX() - 1;
+//        y = tiles[6].getPosY() - 1;
+//        state[3*y + x] = 1;
+//        
+//        x = tiles[7].getPosX() - 1;
+//        y = tiles[7].getPosY() - 1;
+//        state[3*y + x] = 2;
+//        
+//        x = tiles[8].getPosX() - 1;
+//        y = tiles[8].getPosY() - 1;
+//        state[3*y + x] = 3;
+//        
+//        x = tiles[10].getPosX() - 1;
+//        y = tiles[10].getPosY() - 1;
+//        state[3*y + x] = 4;
+//        
+//        x = tiles[11].getPosX() - 1;
+//        y = tiles[11].getPosY() - 1;
+//        state[3*y + x] = 5;
+//        
+//        x = tiles[12].getPosX() - 1;
+//        y = tiles[12].getPosY() - 1;
+//        state[3*y + x] = 6;
+//        
+//        x = tiles[14].getPosX() - 1;
+//        y = tiles[14].getPosY() - 1;
+//        state[3*y + x] = 7;
+//        
+//        x = tiles[15].getPosX() - 1;
+//        y = tiles[15].getPosY() - 1;
+//        state[3*y + x] = 8;
+        
         return state;
     }
 

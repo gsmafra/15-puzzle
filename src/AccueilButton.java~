@@ -1,9 +1,11 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.Color;
 import javax.swing.*;
 
-public class AccueilButton extends JLabel implements MouseListener
+public class AccueilButton extends JLabel implements MouseListener, KeyListener
 {
     private static final long serialVersionUID = 1L;
     int id;
@@ -12,8 +14,8 @@ public class AccueilButton extends JLabel implements MouseListener
     public AccueilButton(int id, int x, int y, int w, int h, AccueilMenu aMenu, String text)
     {
         super(text, null, JLabel.CENTER);
-        this.aMenu = aMenu;
         this.id = id;
+        this.aMenu = aMenu;
         setBounds(x, y, w, h);
         addMouseListener(this);
         setBorder(BorderFactory.createLineBorder(Color.black));

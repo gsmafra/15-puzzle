@@ -94,13 +94,21 @@ public class Jeu
         tiles[i].setPosY(y);
     }
     
-     public short getX(int i)
+    public int getX(int i)
     {
-         return 0;
+        if (i > 0 & i < nx*ny+1)
+        {
+            return (i-1)%nx;
+        }
+        return 0;
     }
     
-    public short getY(int i)
+    public int getY(int i)
     {
+        if (i > 0 & i < nx*ny+1)
+        {
+            return (i-1)/nx;
+        }
         return 0;
     }
 

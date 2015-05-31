@@ -1,3 +1,5 @@
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,13 +19,13 @@ public class AccueilMenu extends JFrame
 
         JPanel panel = (JPanel)getContentPane();
 
-        AccueilButton newGame8 = new AccueilButton(0, 0, 0, 200, 64, this, "New 8-Puzzle");
+        AccueilButton newGame8 = new AccueilButton(0, 0, 0, 200, 64, this, "<HTML>New <U>8</U>-Puzzle</HTML>");
         panel.add(newGame8);
         
-        AccueilButton newGame15 = new AccueilButton(1, 0, 65, 200, 64, this, "New 15-Puzzle");
+        AccueilButton newGame15 = new AccueilButton(1, 0, 65, 200, 64, this, "<HTML>New <U>1</U>5-Puzzle</HTML>");
         panel.add(newGame15);
         
-        AccueilButton options = new AccueilButton(5, 0, 130, 200, 64, this, "Options");
+        AccueilButton options = new AccueilButton(5, 0, 130, 200, 64, this, "<HTML><U>O</U>ptions</HTML>");
         panel.add(options);
 
         JLabel labelx = new JLabel();
@@ -32,6 +34,34 @@ public class AccueilMenu extends JFrame
         setLocation(500, this.getY());
         setSize(200, 195);
         setResizable(false);
+        
+        addKeyListener(new KeyListener() {
+            @Override
+            public void keyPressed(KeyEvent ke) {
+                //doSomething(); - this may create confusion.
+            }
+            @Override
+            public void keyReleased(KeyEvent ke) {
+                //doSomething(); - this may create confusion.
+            }
+            @Override
+            public void keyTyped(KeyEvent ke) {
+                char key = ke.getKeyChar();
+                if (key == '8')
+                {
+                    create8Puzzle();
+                }
+                if (key == '1')
+                {
+                    create15Puzzle();
+                }
+                if (key == 'o' | key == 'O')
+                {
+                    openOptionMenu();
+                }
+            }
+        });
+        
         setVisible(true);
     }
 
