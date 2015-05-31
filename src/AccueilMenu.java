@@ -30,7 +30,7 @@ public class AccueilMenu extends JFrame
         panel.add(labelx);
         
         setLocation(500, this.getY());
-        setSize(205, 222);
+        setSize(200, 195);
         setResizable(false);
         setVisible(true);
     }

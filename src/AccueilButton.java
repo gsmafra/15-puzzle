@@ -12,8 +12,8 @@ public class AccueilButton extends JLabel implements MouseListener
     public AccueilButton(int id, int x, int y, int w, int h, AccueilMenu aMenu, String text)
     {
         super(text, null, JLabel.CENTER);
-        this.aMenu = aMenu;
         this.id = id;
+        this.aMenu = aMenu;
         setBounds(x, y, w, h);
         addMouseListener(this);
         setBorder(BorderFactory.createLineBorder(Color.black));

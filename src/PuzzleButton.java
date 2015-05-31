@@ -9,9 +9,9 @@ public class PuzzleButton extends JLabel implements MouseListener
     int id;
     Interface puzzle;
     
-    public PuzzleButton(int id, int x, int y, int w, int h, Interface puzzle)
+    public PuzzleButton(int id, int x, int y, int w, int h, Interface puzzle, String text)
     {
-        super();
+        super(text, null, JLabel.CENTER);
         this.id = id;
         this.puzzle = puzzle;
         setBounds(x, y, w, h);

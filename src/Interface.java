@@ -59,16 +59,13 @@ public class Interface
             panel.add(tiles[i]);
         }
         
-        PuzzleButton restart = new PuzzleButton(2, 78*nx + 25, 10, 76, 31, this);
-        restart.setIcon(new ImageIcon("images/restart.png"));
+        PuzzleButton restart = new PuzzleButton(2, 78*nx + 25, 10, 76, 31, this, "Restart");
         panel.add(restart);
         
-        PuzzleButton tip = new PuzzleButton(3, 78*nx + 25, 50, 76, 31, this);
-        tip.setIcon(new ImageIcon("images/tip.png"));
+        PuzzleButton tip = new PuzzleButton(3, 78*nx + 25, 50, 76, 31, this, "Tip");
         panel.add(tip);
         
-        PuzzleButton solve = new PuzzleButton(4, 78*nx + 25, 90, 76, 31, this);
-        solve.setIcon(new ImageIcon("images/solve.png"));
+        PuzzleButton solve = new PuzzleButton(4, 78*nx + 25, 90, 76, 31, this, "Solve");
         panel.add(solve);
 
         JLabel labelx = new JLabel();  
@@ -79,11 +76,11 @@ public class Interface
         frame.setResizable(false);
         if (nx == 3)
         {
-            frame.setSize(357, 262);
+            frame.setSize(357, 232);
         }
         else
         {
-            frame.setSize(434, 340);
+            frame.setSize(434, 310);
         }
 
         print = new Timer(400, new ActionListener()
@@ -135,7 +132,7 @@ public class Interface
 
     public void showMessage(String msg)
     {
-        JOptionPane.showMessageDialog(null,msg);
+        JOptionPane.showMessageDialog(frame, msg);
     }
     
     public void moveTile(int mov, int x, int y)

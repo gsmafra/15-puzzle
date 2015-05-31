@@ -33,7 +33,7 @@ public class OptionMenu extends JPanel implements ActionListener
         frameMenu.setContentPane(this);
         /*************/
         
-        String[] petStrings = {"Beige", "Gris", "Supelec", "Terre"};
+        String[] petStrings = {"Beige", "Gray", "Supelec", "Earth"};
         dessinList = new JComboBox<String>(petStrings);
         dessinList.addActionListener(this);
         dessinList.setSelectedIndex(0);
@@ -41,8 +41,7 @@ public class OptionMenu extends JPanel implements ActionListener
         dessinList.setSize(150, 30);
         add(dessinList);
         
-        okButton = new OptionButton(6, 92+57, 398, 50, 40, this);
-        okButton.setIcon(new ImageIcon("images/ok.png"));
+        okButton = new OptionButton(6, 92+57, 398, 50, 40, this, "Ok");
         add(okButton);
 
         JLabel labelx = new JLabel();  

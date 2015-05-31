@@ -1,6 +1,6 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.Colors;
+import java.awt.Color;
 import javax.swing.*;
 
 public class PuzzleButton extends JLabel implements MouseListener
@@ -11,7 +11,7 @@ public class PuzzleButton extends JLabel implements MouseListener
     
     public PuzzleButton(int id, int x, int y, int w, int h, Interface puzzle)
     {
-        super();
+        super(text, null, JLabel.CENTER);
         this.id = id;
         this.puzzle = puzzle;
         setBounds(x, y, w, h);

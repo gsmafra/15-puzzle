@@ -1,6 +1,6 @@
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.Colors;
+import java.awt.Color;
 import javax.swing.*;
 
 public class AccueilButton extends JLabel implements MouseListener

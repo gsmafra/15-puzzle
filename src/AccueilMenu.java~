@@ -29,8 +29,8 @@ public class AccueilMenu extends JFrame
         JLabel labelx = new JLabel();
         panel.add(labelx);
         
-        setPosition(500, this.getY());
-        setSize(205, 222);
+        setLocation(500, this.getY());
+        setSize(200, 195);
         setResizable(false);
         setVisible(true);
     }

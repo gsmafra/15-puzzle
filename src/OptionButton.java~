@@ -14,7 +14,6 @@ public class OptionButton extends JLabel implements MouseListener
         this.menu = menu;
         setBounds(x, y, w, h);
         addMouseListener(this);
-        setBorder(BorderFactory.createLineBorder(Color.black));
     }
 
     public void mouseClicked(MouseEvent e)
