@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-
-
 public class Control
 {
 	private int dessin;
