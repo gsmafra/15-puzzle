@@ -8,4 +8,3 @@ The solver algorithm is based on a [breadth-first-search][] using the solution a
 
 [breadth-first-search]: https://en.wikipedia.org/wiki/Breadth-first_search
 
-test
