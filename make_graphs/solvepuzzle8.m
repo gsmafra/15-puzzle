@@ -1,4 +1,4 @@
-% test
+% matlab
 
 function st = solvepuzzle8(NEXT, ST, st)
 
