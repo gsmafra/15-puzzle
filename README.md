@@ -7,3 +7,5 @@ The solver algorithm is based on a [breadth-first-search][] using the solution a
 [15-puzzle]: https://en.wikipedia.org/wiki/15_puzzle
 
 [breadth-first-search]: https://en.wikipedia.org/wiki/Breadth-first_search
+
+test
